@@ -1,0 +1,51 @@
+{
+    "name": "Google Play Music Web Player Hotkeys",
+    "description": "Add keyboard shortcuts to control the Google Play Music web player",
+    "icons": {
+        "24": "icon24.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "permissions": ["https://play.google.com/music/*"],
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+    "commands": {
+        "sj:play-circle-fill": {
+            "description": "Play/Pause",
+            "suggested_key": {
+                "default": "MediaPlayPause"
+            },
+            "global": true
+        },
+        "av:skip-next": {
+            "description": "Next track",
+            "suggested_key": {
+                "default": "MediaNextTrack"
+            },
+            "global": true
+        },
+        "av:skip-previous": {
+            "description": "Previous track",
+            "suggested_key": {
+                "default": "MediaPrevTrack"
+            },
+            "global": true
+        },
+        "av:repeat": {
+            "description": "Toggle repeat modes"
+        },
+        "av:shuffle": {
+            "description": "Shuffle"
+        },
+        "sj:thumb-up-outline": {
+            "description": "Thumbs up"
+        },
+        "sj:thumb-down-outline": {
+            "description": "Thumbs down"
+        }
+    }
+}
